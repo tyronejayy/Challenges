@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0px auto;
+            color: white;
+        }
+        .left-side {
+            width: 700px;
+            float:left;
+            background-color: darkcyan;
+        }
+        .right-side {
+            width: 260px;
+            float:right;
+            background-color:deeppink;
+        }
+        .banner {
+            width: inherit;
+        }
+        .images > img {
+            padding: 10px;
+            width: 250px;
+        }
+        .images {
+            text-align: center;
+        }
+
+        /* media queries are sensitive */
+
+        @media screen and (max-width: 960px) {
+            .container {
+                width:100%;
+            }
+            .left-side {
+                width: 30%;
+            }
+            .right-side {
+                width: 70%;
+            }
+            .banner {
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\lifechoices\Desktop\devon 19-09\img\heroimage_1.jpg" alt="" class="banner">
+        <section class="left-side">
+            This is the left column and we're gonna make it responsive.
+        </section>
+        <aside class="right-side">
+            This is the right column and we're gonna make it responsive.
+        </aside>
+
+        <section class="images">
+            <img src="C:\Users\lifechoices\Desktop\devon 19-09\img\feature_image.jpg">
+            <img src="C:\Users\lifechoices\Desktop\devon 19-09\img\feature_image.jpg">
+            <img src="C:\Users\lifechoices\Desktop\devon 19-09\img\feature_image.jpg">
+            <img src="C:\Users\lifechoices\Desktop\devon 19-09\img\feature_image.jpg">
+        </section>
+    </div>
+</body>
+</html>

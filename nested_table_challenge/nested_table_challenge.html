@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <table border="1" width="500px" height="300px">
+        <tr>
+            <td width="500px" height="100px">1</td>
+            <td width="500px" height="100px">2</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                <table border="1" width="500px" height="300px">
+                    <tr>
+                        <td style="background-color:orange" width="500px">4</td>
+                        <td style="background-color:orange" width="500px">5</td>
+                        <td rowspan="2"; colspan="5" style="background-color:yellow">6</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:orange" width="500px">7</td>
+                        <td style="background-color:orange" width="500px">8</td>
+                        <tr>
+                            <td colspan="4" style="background-color:yellow" width="100px">9</td>
+                            <td style="background-color:yellow" width="500px">10</td>
+                        </tr>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
